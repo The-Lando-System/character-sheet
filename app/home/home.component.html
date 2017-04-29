@@ -1,0 +1,73 @@
+<!-- Loading Spinner -->
+<div *ngIf="homeLoading" class="center-page">
+  <div id="loading-spinner">
+    <i class="fa fa-circle-o-notch fa-spin fa-5x fa-fw"></i>
+  </div>
+</div>
+
+<!-- Main Page -->
+<div *ngIf="!homeLoading">
+  <div class="container">
+
+    <!-- Header -->
+    <div class="row">
+      <div class="col-md-4">
+        <h3>Portfolio</h3>
+      </div>
+      <div class="col-md-8">
+        <h3>Stats</h3>
+      </div>
+    </div>
+
+    <!-- 1st Content Row -->
+    <div class="row">
+
+      <!-- Portfolio -->
+      <div class="col-md-4">
+        <div class="card">
+          <img class="card-img-top" style="width:100%; height: auto;" src="resources/images/dashboard.png" alt="Hello World">
+          <div class="card-block">
+            <p class="card-text">Dashboard</p>
+          </div>
+        </div>
+        <div class="card">
+          <img class="card-img-top" style="width:100%; height: auto;" src="resources/images/info-manager.png" alt="Card image cap">
+          <div class="card-block">
+            <p class="card-text">Info Manager</p>
+          </div>
+        </div>
+        <div class="card">
+          <img class="card-img-top" style="width:100%; height: auto;" src="resources/images/sarlacc.png" alt="Card image cap">
+          <div class="card-block">
+            <p class="card-text">Sarlacc</p>
+          </div>
+        </div>
+        <div class="card">
+          <img class="card-img-top" style="width:100%; height: auto;" src="resources/images/network-analyzer.png" alt="Card image cap">
+          <div class="card-block">
+            <p class="card-text">Network Analyzer</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Stats -->
+      <div class="col-md-4">
+        <ul class="list-group">
+          <li class="list-group-item">Cras justo odio</li>
+          <li class="list-group-item">Dapibus ac facilisis in</li>
+          <li class="list-group-item">Morbi leo risus</li>
+          <li class="list-group-item">Porta ac consectetur ac</li>
+          <li class="list-group-item">Vestibulum at eros</li>
+        </ul>
+      </div>
+
+      <!-- Personal -->
+      <div class="col-md-4">
+        <img class="card-img-top" style="width:100%; height: auto;" src="resources/images/me.jpg" alt="Card image cap">
+      </div>
+
+    </div>
+
+
+  </div>
+</div>
